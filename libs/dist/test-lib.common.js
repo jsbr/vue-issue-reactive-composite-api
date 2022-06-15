@@ -113,8 +113,8 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: external "vue"
-var external_vue_namespaceObject = require("vue");
+;// CONCATENATED MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+var external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
 ;// CONCATENATED MODULE: ./src/helper.ts
 function interval(data) {
     setInterval(function () { return data.count++; }, 1000);
@@ -125,15 +125,15 @@ function interval(data) {
 
 
 
-/* harmony default export */ var CompApiTestvue_type_script_setup_true_lang_ts = (/*#__PURE__*/(0,external_vue_namespaceObject.defineComponent)({
+/* harmony default export */ var CompApiTestvue_type_script_setup_true_lang_ts = (/*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.defineComponent)({
     __name: 'CompApiTest',
     setup: function (__props) {
-        var data = (0,external_vue_namespaceObject.reactive)({
+        var data = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.reactive)({
             count: 0
         });
         interval(data);
         return function (_ctx, _cache) {
-            return ((0,external_vue_namespaceObject.openBlock)(), (0,external_vue_namespaceObject.createElementBlock)("h3", null, "Composite Api (setup): " + (0,external_vue_namespaceObject.toDisplayString)(data.count), 1));
+            return ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("h3", null, "Composite Api (setup): " + (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)(data.count), 1));
         };
     }
 }));
@@ -151,31 +151,17 @@ const __exports__ = CompApiTestvue_type_script_setup_true_lang_ts;
 
 
 
-
-/* harmony default export */ var CompApiTestV2vue_type_script_setup_true_lang_ts = (/*#__PURE__*/(0,external_vue_namespaceObject.defineComponent)({
+/* harmony default export */ var CompApiTestV2vue_type_script_setup_true_lang_ts = (/*#__PURE__*/(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.defineComponent)({
     __name: 'CompApiTestV2',
     setup: function (__props) {
-        var count = (0,external_vue_namespaceObject.ref)(0);
-        var data = (0,external_vue_namespaceObject.reactive)({
+        var count = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.ref)(0);
+        var data = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.reactive)({
             count: count
         });
-        var instance = (0,external_vue_namespaceObject.getCurrentInstance)();
-        var data2 = new Proxy({ count: count }, {
-            set: function (target, p, value, receiver) {
-                var _a;
-                console.log(value);
-                target[p].value = value;
-                (_a = instance === null || instance === void 0 ? void 0 : instance.proxy) === null || _a === void 0 ? void 0 : _a.$forceUpdate();
-                return true;
-            },
-            get: function (target, p) {
-                return target[p].value;
-            }
-        });
-        console.log(instance);
-        interval(data2);
+        setInterval(function () { return data.count++; }, 1000);
+        // interval(data)
         return function (_ctx, _cache) {
-            return ((0,external_vue_namespaceObject.openBlock)(), (0,external_vue_namespaceObject.createElementBlock)("h3", null, "Composite Api (setup) V2: " + (0,external_vue_namespaceObject.toDisplayString)(count.value), 1));
+            return ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("h3", null, "Composite Api (setup) V2: " + (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)(count.value), 1));
         };
     }
 }));
@@ -192,7 +178,7 @@ const CompApiTestV2_exports_ = CompApiTestV2vue_type_script_setup_true_lang_ts;
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/ts-loader/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/OptionApiTest.vue?vue&type=template&id=30213d77&ts=true
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-    return ((0,external_vue_namespaceObject.openBlock)(), (0,external_vue_namespaceObject.createElementBlock)("h3", null, "Option Api: " + (0,external_vue_namespaceObject.toDisplayString)(_ctx.count), 1));
+    return ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("h3", null, "Option Api: " + (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)(_ctx.count), 1));
 }
 
 ;// CONCATENATED MODULE: ./src/components/OptionApiTest.vue?vue&type=template&id=30213d77&ts=true
@@ -200,7 +186,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/ts-loader/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/OptionApiTest.vue?vue&type=script&lang=ts
 
 
-/* harmony default export */ var OptionApiTestvue_type_script_lang_ts = ((0,external_vue_namespaceObject.defineComponent)({
+/* harmony default export */ var OptionApiTestvue_type_script_lang_ts = ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.defineComponent)({
     data: function () {
         return {
             count: 0
@@ -227,7 +213,7 @@ const OptionApiTest_exports_ = /*#__PURE__*/(0,exportHelper/* default */.Z)(Opti
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/ts-loader/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/OptionApiTestV2.vue?vue&type=template&id=7aae2177&ts=true
 
 function OptionApiTestV2vue_type_template_id_7aae2177_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
-    return ((0,external_vue_namespaceObject.openBlock)(), (0,external_vue_namespaceObject.createElementBlock)("h3", null, "Option Api V2: " + (0,external_vue_namespaceObject.toDisplayString)(_ctx.data.count), 1));
+    return ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("h3", null, "Option Api V2: " + (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)(_ctx.data.count), 1));
 }
 
 ;// CONCATENATED MODULE: ./src/components/OptionApiTestV2.vue?vue&type=template&id=7aae2177&ts=true
@@ -235,7 +221,7 @@ function OptionApiTestV2vue_type_template_id_7aae2177_ts_true_render(_ctx, _cach
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/ts-loader/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/OptionApiTestV2.vue?vue&type=script&lang=ts
 
 
-/* harmony default export */ var OptionApiTestV2vue_type_script_lang_ts = ((0,external_vue_namespaceObject.defineComponent)({
+/* harmony default export */ var OptionApiTestV2vue_type_script_lang_ts = ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.defineComponent)({
     data: function () {
         return {
             data: {
