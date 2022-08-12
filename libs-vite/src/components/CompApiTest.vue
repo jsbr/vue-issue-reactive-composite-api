@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { interval } from '../helper';
 import { reactive } from 'vue';
 
 
@@ -7,7 +6,7 @@ const data = reactive({
     count: 0
 })
 
-interval(data)
+setInterval(()=>data.count++,1000);
 </script>
 
 
